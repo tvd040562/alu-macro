@@ -1,0 +1,20 @@
+{
+  "DESIGN_NAME": "ALU",
+  "VERILOG_FILES": "dir::alu.v",
+  "CLOCK_PERIOD": 10,
+  "PNR_SDC_FILE": "dir::pnr_alu.sdc",
+  "SIGNOFF_SDC_FILE": "dir::signoff_alu.sdc",
+  "FP_CORE_UTIL": 90,
+  "meta": {
+    "version": 2,
+    "flow": "Classic",
+    "substituting_steps": {
+      "OpenROAD.STAMidPNR*": null,
+	  "Verilator.Lint": null,
+	  "Checker.Linttimingconstructs": null,
+	  "Checker.Linterrors": null,
+	  "Checker.Lintwarnings": null,
+      "Magic.DRC": "KLayout.DRC"
+    }
+  }
+}

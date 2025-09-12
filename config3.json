@@ -1,0 +1,9 @@
+{
+  "DESIGN_NAME": "ALU",
+  "VERILOG_FILES": "dir::alu.v",
+  "CLOCK_PERIOD": 10,
+  "PNR_SDC_FILE": "dir::pnr_alu.sdc",
+  "SIGNOFF_SDC_FILE": "dir::signoff_alu.sdc",
+  "FP_PIN_ORDER_CFG": "dir::pin-order.cfg", 
+  "FP_CORE_UTIL": 40
+}
