@@ -5,7 +5,7 @@ module tb;
 	reg clk;
 	
 	top dut(
-		in_a, in_b, out_res
+		clk, in_a, in_b, out_res
 	);
 
 	initial begin
@@ -23,7 +23,7 @@ module tb;
 			in_a = $random % 256;
 			in_b = $random % 256;
 			@(posedge clk);
-			#0.011 $display("in_a = %d; in_b = %d; out_res = %d;", in_a, in_b, out_res);
+			@(negedge clk) $display("in_a = %d; in_b = %d; expected = %d; actual = %d;", in_a, in_b, int'((in_a+in_b)*(in_a-in_b)), out_res);
 		end
 		$finish();
 	end
