@@ -17,6 +17,8 @@ set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_ris
 ###############################################################################
 # Design Rules
 ###############################################################################
+set_multicycle_path 3 -through [get_nets -regexp {alu_out.*}] -setup
+set_multicycle_path 3 -through [get_nets -regexp {alu_out.*}] -hold
 set_max_transition 1.500 [current_design]
 set_max_capacitance 0.2000 [current_design]
 set_max_fanout 10.0000 [current_design]
