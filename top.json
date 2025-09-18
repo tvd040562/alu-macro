@@ -3,7 +3,7 @@
   "VERILOG_FILES": ["dir::macro/alu_bb.v", "dir::top.v"],
   "CLOCK_PORT": "clk",
   "CLOCK_PERIOD": 12,
-  "//PNR_SDC_FILE": "dir::pnr_alu.sdc",
+  "PNR_SDC_FILE": "dir::pnr_top.sdc",
   "SIGNOFF_SDC_FILE": "dir::signoff_top.sdc",
   "//FP_PIN_ORDER_CFG": "dir::pin-order.cfg", 
   "//FP_CORE_UTIL": 40,
