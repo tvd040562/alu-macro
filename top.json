@@ -9,6 +9,7 @@
   "//FP_CORE_UTIL": 40,
   "GRT_ANTENNA_ITERS": 10,
   "RUN_HEURISTIC_DIODE_INSERTION": true,
+  "MAX_FANOUT_CONSTRAINT": 6,
   "FP_SIZING": "absolute",
   "DIE_AREA": [0, 0, 230, 250],
   "MACROS": {
