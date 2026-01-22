@@ -9,8 +9,10 @@
   "DEFAULT_CORNER": "max_ss_100C_1v60",
   "GRT_ANTENNA_ITERS": 10,
   "RUN_HEURISTIC_DIODE_INSERTION": true,
+  "FP_PDN_MULTILAYER": true,
+  
   "FP_SIZING": "absolute",
-  "DIE_AREA": [0, 0, 430, 450],
+  "DIE_AREA": [0, 0, 350, 350],
   "MACROS": {
 	"ALU": {
 		"gds": ["dir::macro/gds/ALU.gds"],
@@ -24,17 +26,23 @@
                 "orientation": "N"
             },
             "i2": {
-                "location": [50, 250],
+                "location": [50, 200],
                 "orientation": "N"
             },
             "i3": {
-                "location": [240, 150],
+                "location": [200, 150],
                 "orientation": "N"
             }
         }
     }
   },
-  "VDD_NETS": ["vccd1"],
-  "GND_NETS": ["vssd1"],
-  "PDN_MACRO_CONNECTIONS": ["i.* vccd1 vssd1 VPWR VGND"]
+  "FP_PDN_VPITCH": 40,  
+  "FP_PDN_HPITCH": 40,
+  "FP_PDN_VOFFSET": 50,  
+  "FP_PDN_HOFFSET": 50,
+  "//FP_PDN_VWIDTH": 2,  
+  "//FP_PDN_HWIDTH": 2,
+  "//VDD_NETS": ["vccd1"],
+  "//GND_NETS": ["vssd1"],
+  "//PDN_MACRO_CONNECTIONS": ["i.* vccd1 vssd1 VPWR VGND"]
 }

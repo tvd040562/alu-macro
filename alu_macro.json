@@ -4,6 +4,21 @@
   "CLOCK_PERIOD": 10,
   "PNR_SDC_FILE": "dir::pnr_alu.sdc",
   "SIGNOFF_SDC_FILE": "dir::signoff_alu.sdc",
-  "FP_PIN_ORDER_CFG": "dir::pin-order.cfg", 
-  "FP_CORE_UTIL": 40
+  "FP_PIN_ORDER_CFG": "dir::pin-order.cfg",
+  "FP_PDN_MULTILAYER": false,
+  "PL_RESIZER_SETUP_SLACK_MARGIN": 1.5,  
+  "GRT_RESIZER_SETUP_SLACK_MARGIN": 1.5,
+  "GRT_ANTENNA_ITERS": 10,
+  "RUN_HEURISTIC_DIODE_INSERTION": true,
+  "MAX_FANOUT_CONSTRAINT": 6,
+  "FP_PDN_VPITCH": 40,  
+  "FP_PDN_HPITCH": 40,
+  "FP_PDN_VOFFSET": 50,  
+  "FP_PDN_HOFFSET": 50,
+  "//FP_PDN_VWIDTH": 2,  
+  "//FP_PDN_HWIDTH": 2,
+  "DIE_AREA": [0, 0, 110, 110],
+  "CORE_AREA": [10, 10, 100, 100],
+  "FP_SIZING": "absolute",
+  "//FP_CORE_UTIL": 80
 }
